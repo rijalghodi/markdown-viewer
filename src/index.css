@@ -1,13 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Raleway:wght@400;600;700&family=Roboto&family=Roboto+Mono&display=swap");
+
+:root {
+  --bg-color-1: #f08e3e;
+  --bg-color-2: #0c2427;
+  --fg-color-1: #214e34;
+  --fg-color-2: #8bb174;
+  --text-color-1: #e9f7f9;
+  --text-color-2: #666565;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color-1);
+  background-color: var(--text-color-1);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  display: inline-block;
+  /* white-space: normal; */
+  max-width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-family: "Roboto Mono", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.9rem;
+  overflow: hidden;
+  background-color: #164d54;
+  padding: 2px 10px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+} */
+
+@media only screen and (max-width: 550px) {
+  :root {
+    font-size: 12px;
+  }
 }

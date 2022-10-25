@@ -1,0 +1,77 @@
+.section-container {
+  width: 48%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  color: var(--bg-color-2);
+}
+
+.expander {
+  background-color: var(--bg-color-2);
+  color: var(--text-color-1);
+  border: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h2 {
+  margin: 5px;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid rgb(135, 135, 135);
+  background-color: var(--bg-color-2);
+  color: var(--text-color-1);
+  padding: 30px;
+  min-height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.markdown-input {
+  resize: vertical;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+}
+
+/* To control expansion */
+
+.hidden {
+  display: none !important;
+}
+
+.expand {
+  min-height: 100vh !important;
+  height: 60vh;
+  min-width: 70vw;
+}
+
+@media only screen and (max-width: 1080px) {
+  .section-container {
+    width: 70%;
+  }
+
+  .markdown-input {
+    height: 30vh;
+    min-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .section-container {
+    width: 90%;
+  }
+}
